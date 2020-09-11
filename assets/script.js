@@ -56,6 +56,13 @@ $("#17 textarea").val(value17);
     
 // for (var i = 0; i < hourID.length; i++){
 //     var blockHour = hourID[i];
+    
+if (9 === currentHour){
+
+}
+
+
+
     // if(9 < currentHour){
     //     $(".time-block").addClass("past")
     //     // console.log("past")
@@ -66,6 +73,17 @@ $("#17 textarea").val(value17);
     //     // console.log("future");
     //     $(".time-block").addClass("future");
     // }
+    // if(17 < currentHour){
+    //     $(".time-block").addClass("past")
+    //     // console.log("past")
+    // } else if (9 === currentHour){
+    //     $(".time-block").addClass("present")
+    //     // console.log("present")
+    // } else if (9 > currentHour){
+    //     // console.log("future");
+    //     $(".time-block").addClass("future");
+    // }
+
 
     $("#" + (currentHour - 15)).addClass("past");
     $("#" + (currentHour - 14)).addClass("past");
@@ -101,9 +119,5 @@ $("#17 textarea").val(value17);
     $("#" + (currentHour + 16)).addClass("future");
     $("#" + (currentHour + 17)).addClass("future");
     
-//  }
-//  }
-
-
 
 });
