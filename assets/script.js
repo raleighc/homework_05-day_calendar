@@ -17,37 +17,37 @@ $(".saveBtn").on("click", function(event){
     var value = $(this).siblings("textarea").val();
     console.log(value);
     var key = $(this).parent().attr("id")
-    localStorage.setItem(key, value);
+    localStorage.setItem(key, JSON.stringify(value));
     // console.log(key);
 })
 
 
 // Connect every hour to local storage independently.
-var value9 = localStorage.getItem("9");
+var value9 = JSON.parse(localStorage.getItem("9"));
 $("#9 textarea").val(value9);
 // console.log(value);
-var value10 = localStorage.getItem("10");
+var value10 = JSON.parse(localStorage.getItem("10"));
 $("#10 textarea").val(value10);
 // console.log(value);
-var value11 = localStorage.getItem("11");
+var value11 = JSON.parse(localStorage.getItem("11"));
 $("#11 textarea").val(value11);
 // console.log(value);
-var value12 = localStorage.getItem("12");
+var value12 = JSON.parse(localStorage.getItem("12"));
 $("#12 textarea").val(value12);
 // console.log(value);
-var value13 = localStorage.getItem("13");
+var value13 = JSON.parse(localStorage.getItem("13"));
 $("#13 textarea").val(value13);
 // console.log(value);
-var value14 = localStorage.getItem("14");
+var value14 = JSON.parse(localStorage.getItem("14"));
 $("#14 textarea").val(value14);
 // console.log(value);
-var value15 = localStorage.getItem("15");
+var value15 = JSON.parse(localStorage.getItem("15"));
 $("#15 textarea").val(value15);
 // console.log(value);
-var value16 = localStorage.getItem("16");
+var value16 = JSON.parse(localStorage.getItem("16"));
 $("#16 textarea").val(value16);
 // console.log(value);
-var value17 = localStorage.getItem("17");
+var value17 = JSON.parse(localStorage.getItem("17"));
 $("#17 textarea").val(value17);
 // console.log(value);
 
